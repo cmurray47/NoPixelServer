@@ -125,6 +125,13 @@ RegisterCommand("atm", function(src, args, raw)
   TriggerEvent('bank:checkATM')
 end)
 
+RegisterCommand("freecam", function(source, args, raw)
+  TriggerEvent('camera:enterfreecam')
+end, false)
+
+RegisterCommand("exitfreecam", function(source, args, raw)
+  TriggerEvent('camera:exitfreecam')
+end, false)
 
 RegisterCommand("getpos", function(source, args, raw)
   local ped = GetPlayerPed(PlayerId())

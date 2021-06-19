@@ -185,6 +185,14 @@ commands = {
       TriggerClientEvent('bank:checkATM', src)
     end},
     
+    {"/freecam", "Trigger freecam", ALL, function(src, args)
+      TriggerClientEvent('camera:enterfreecam', src)
+    end},
+
+    {"/exitfreecam", "End freecam", ALL, function(src, args)
+      TriggerClientEvent('camera:exitfreecam', src)
+    end},
+
     {"/vm", "Use the extremely overpriced vending machine ($20)", ALL, function(src, args)
       TriggerClientEvent('shop:useVM', src)
     end},
